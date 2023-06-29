@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class MultiplicationTables {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        System.out.println("Multiplication Tables:");
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("Table for " + i + ":");
+
+            int evenSum = 0;
+
+            for (int j = 1; j <= 10; j++) {
+                int result = i * j;
+                System.out.println(i + " x " + j + " = " + result);
+
+                evenSum += result * (result % 2);
+            }
+
+            System.out.println("Sum of even numbers: " + evenSum);
+            System.out.println();
+        }
+
+        scanner.close();
+    }
+}
