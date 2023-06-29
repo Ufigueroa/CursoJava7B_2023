@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class DaysInMonth {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the name of the month: ");
+        String month = scanner.nextLine();
+
+        int days;
+
+        switch (month.toLowerCase()) {
+            case "january":
+            case "march":
+            case "may":
+            case "july":
+            case "august":
+            case "october":
+            case "december":
+                days = 31;
+                break;
+            case "april":
+            case "june":
+            case "september":
+            case "november":
+                days = 30;
+                break;
+            case "february":
+                days = 28; // Assuming non-leap year
+                break;
+            default:
+                System.out.println("Invalid month");
+                scanner.close();
+                return;
+        }
+
+        System.out.println("The month of " + month + " has " + days + " days.");
+
+        scanner.close();
+    }
+}
