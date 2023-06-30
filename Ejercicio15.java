@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class CarFeatures {
+public class Ejercicio15 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a character (a, b, or c): ");
+        System.out.println("Ingrese una letra (a, b, or c): ");
         char option = scanner.next().charAt(0);
 
         switch (option) {
@@ -18,7 +18,7 @@ public class CarFeatures {
                 System.out.println("4 ruedas, un motor, cierre centralizado, aire, airbag");
                 break;
             default:
-                System.out.println("Invalid option");
+                System.out.println("Opcion invalida");
                 break;
         }
 
