@@ -7,7 +7,7 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a category (a, b, or c): ");
+        System.out.println("Ingrese una categoria (a, b, or c): ");
         String category = scanner.nextLine();
 
         String word;
@@ -19,12 +19,12 @@ public class Ejercicio4 {
         } else if (category.equalsIgnoreCase("c")) {
             word = "abuelos";
         } else {
-            System.out.println("Invalid category entered!");
+            System.out.println("Categoria invalida ingresada!");
             scanner.close();
             return;
         }
 
-        System.out.println("The corresponding word is: " + word);
+        System.out.println("La palabra correspondiente es: " + word);
 
         scanner.close();
     }
