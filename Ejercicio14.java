@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class MedalAwards {
+public class Ejercicio14 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a number (1-3): ");
+        System.out.println("Ingrese un numero (1-3): ");
         int position = scanner.nextInt();
 
         switch (position) {
