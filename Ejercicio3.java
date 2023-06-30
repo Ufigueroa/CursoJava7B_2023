@@ -4,27 +4,27 @@ public class Ejercicio3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter the name of the month: ");
+        System.out.println("Ingrese el nombre del mes: ");
         String month = scanner.nextLine();
 
         int days = 0;
 
-        if (month.equalsIgnoreCase("January") || month.equalsIgnoreCase("March") ||
-            month.equalsIgnoreCase("May") || month.equalsIgnoreCase("July") ||
-            month.equalsIgnoreCase("August") || month.equalsIgnoreCase("October") ||
-            month.equalsIgnoreCase("December")) {
+        if (month.equalsIgnoreCase("Enero") || month.equalsIgnoreCase("Marzo") ||
+            month.equalsIgnoreCase("Mayo") || month.equalsIgnoreCase("Julio") ||
+            month.equalsIgnoreCase("Agosto") || month.equalsIgnoreCase("Octubre") ||
+            month.equalsIgnoreCase("Diciembre")) {
             days = 31;
-        } else if (month.equalsIgnoreCase("April") || month.equalsIgnoreCase("June") ||
-                   month.equalsIgnoreCase("September") || month.equalsIgnoreCase("November")) {
+        } else if (month.equalsIgnoreCase("Abril") || month.equalsIgnoreCase("Junio") ||
+                   month.equalsIgnoreCase("Septiembre") || month.equalsIgnoreCase("Noviembre")) {
             days = 30;
-        } else if (month.equalsIgnoreCase("February")) {
+        } else if (month.equalsIgnoreCase("Febrero")) {
             days = 28; // Assuming non-leap year
         } else {
-            System.out.println("Invalid month");
+            System.out.println("Mes invalido");
             System.exit(0);
         }
 
-        System.out.println("The month of " + month + " has " + days + " days.");
+        System.out.println("El mes de " + month + " tiene " + days + " dias.");
 
         scanner.close();
     }
