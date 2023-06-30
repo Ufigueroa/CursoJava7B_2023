@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class MultiplicationTables {
+public class Ejercicio18 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a number: ");
+        System.out.print("Ingrese un numero: ");
         int number = scanner.nextInt();
 
-        System.out.println("Multiplication Tables:");
+        System.out.println("Tablas de multiplicar:");
 
         for (int i = 1; i <= 10; i++) {
             System.out.println("Table for " + i + ":");
@@ -21,7 +21,7 @@ public class MultiplicationTables {
                 evenSum += result * (result % 2);
             }
 
-            System.out.println("Sum of even numbers: " + evenSum);
+            System.out.println("Suma de los numeros pares: " + evenSum);
             System.out.println();
         }
 
