@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class DozenCheck {
+public class Ejercicio12 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter a number: ");
+        System.out.println("Ingrese un número: ");
         int number = scanner.nextInt();
 
         if ((number >= 1 && number <= 12) || (number >= 13 && number <= 24) || (number >= 25 && number <= 36)) {
