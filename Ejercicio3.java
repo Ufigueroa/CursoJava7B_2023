@@ -3,7 +3,7 @@ Ejercicio 3:
 
 import java.util.Scanner;
 
-public class DaysInMonth {
+public class ejercicio3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
