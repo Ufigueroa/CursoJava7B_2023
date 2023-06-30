@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class RandomNumbers {
+public class Ejercicio19 {
     public static void main(String[] args) {
         Random random = new Random();
         int count = 0;
