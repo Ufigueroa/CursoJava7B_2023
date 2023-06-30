@@ -1,6 +1,3 @@
-Ejercicio 3:
-
-
 import java.util.Scanner;
 
 public class ejercicio3 {
